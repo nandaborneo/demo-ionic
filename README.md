@@ -21,3 +21,10 @@
     ionic cordova plugin add cordova-plugin-camera
     
     npm install @ionic-native/camera@4
+
+## After above syntax has done running please update this file
+Open file index.d.ts at <project-name>/node_modules/@ionic-native/image-picker/index.d.ts
+and add this code `listPrevious?: string;` below line:25 like below
+  
+    outputType?: number;
+    listPrevious?: string; => this should be added
