@@ -59,9 +59,7 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-image-picker": {},
       "cordova-plugin-crop": {},
-      "cordova-plugin-camera": {
-        "ANDROID_SUPPORT_V4_VERSION": "27.+"
-      },
+      "cordova-plugin-camera": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-android-permissions": {}
     },

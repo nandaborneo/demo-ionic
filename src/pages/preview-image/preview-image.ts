@@ -56,7 +56,7 @@ export class PreviewImagePage {
         {
           text: 'Add Picture',
           handler: () => {
-            this.openImagePicker();
+            this.openImagePicker(this.previewPhotos);
           }
         },
         {
@@ -70,10 +70,12 @@ export class PreviewImagePage {
     actionSheet.present();
   }
 
-  openImagePicker(){
-    let options = {
-      maximumImagesCount: -1
+  openImagePicker(previewPhotos = null){
+    var options = {
+      maximumImagesCount: -1,
+      listPrevious: JSON.stringify(previewPhotos) ? previewPhotos : ""
     }
+    console.log(JSON.stringify(previewPhotos));
     this.imagePicker.getPictures(options)
     .then((results) => {
       for (var i = 0;i<results.length;i++){

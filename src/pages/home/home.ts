@@ -28,7 +28,7 @@ export class HomePage {
   ) {
     this.info.maxImage = 5;
     this.permission = false;
-    // this.checkPermission();
+    this.checkPermission();
   }
 
   presentActionSheet() {
